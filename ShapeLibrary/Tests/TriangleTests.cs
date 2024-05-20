@@ -3,7 +3,7 @@ using ShapeLibrary;
 namespace Tests
 {
   [TestClass]
-  public class ShapeTests
+  public class TriangleTests
   {
     [TestMethod]
     public void IsRightCalculate()
