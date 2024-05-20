@@ -1,0 +1,12 @@
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\bin\Debug\net8.0\ShapeLibrary.deps.json
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\bin\Debug\net8.0\ShapeLibrary.dll
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\bin\Debug\net8.0\ShapeLibrary.pdb
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.AssemblyInfoInputs.cache
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.AssemblyInfo.cs
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.csproj.CoreCompileInputs.cache
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.sourcelink.json
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.dll
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\refint\ShapeLibrary.dll
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ShapeLibrary.pdb
+D:\Programming\MyGBProjects\TestTasks\ShapeLibrary\ShapeLibrary\obj\Debug\net8.0\ref\ShapeLibrary.dll
