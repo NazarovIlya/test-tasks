@@ -3,16 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes.csproj", "{77920B48-546C-4C98-B5CB-7743DD5A8359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes.csproj", "{77920B48-546C-4C98-B5CB-7743DD5A8359}"
 	ProjectSection(ProjectDependencies) = postProject
 		{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8} = {86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeLibrary", "..\ShapeLibrary\ShapeLibrary.csproj", "{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeLibrary", "..\ShapeLibrary\ShapeLibrary.csproj", "{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{92100A43-A47C-4B77-9D5A-D830058273BD}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{46406BC6-15FF-4D7F-A3A6-ADC03F2D5818}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8} = {86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}
 	EndProjectSection
 EndProject
 Global
@@ -29,6 +34,10 @@ Global
 		{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86A2D3F7-358B-4190-A4DD-4A34DD24E8E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46406BC6-15FF-4D7F-A3A6-ADC03F2D5818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46406BC6-15FF-4D7F-A3A6-ADC03F2D5818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46406BC6-15FF-4D7F-A3A6-ADC03F2D5818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46406BC6-15FF-4D7F-A3A6-ADC03F2D5818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
