@@ -1,7 +1,7 @@
 ﻿using ShapeLibrary;
 using Tests;
 
-ShapeTests shapeTests = new();
+TriangleTests shapeTests = new();
 
 //shapeTests.IsTriangle();
 
