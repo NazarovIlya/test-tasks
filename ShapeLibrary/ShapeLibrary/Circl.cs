@@ -2,11 +2,11 @@
 
 namespace ShapeLibrary
 {
-  public class Circl() : Shape
+  public class Circl : Shape
   {
     private double _radius;
 
-    public Circl(double radius) : this()
+    public Circl(double radius)
     {
       if (radius <= 0)
       {

@@ -2,13 +2,13 @@
 
 namespace ShapeLibrary
 {
-  public class Triangle() : Shape, IRight
+  public class Triangle : Shape, IRight
   {
     private double _firstSide;
     private double _secondSide;
     private double _thirdSide;
 
-    public Triangle(double firstSide, double secondSide, double thirdSide) : this()
+    public Triangle(double firstSide, double secondSide, double thirdSide)
     {
       if (firstSide <= 0 || secondSide <= 0 || thirdSide <= 0)
       {
