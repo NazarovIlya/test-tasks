@@ -8,14 +8,9 @@ namespace ShapeLibrary
 
     public Circl(double radius)
     {
-      if (radius <= 0)
-      {
-        throw new ArgumentNotPositiveValueException("The radius value is not valid and must be greater than zero.");
-      }
-      else
-      {
-        _radius = radius;
-      }
+      _ = (radius <= 0)
+        ? throw new ArgumentNotPositiveValueException("The radius value is not valid and must be greater than zero.")
+        : _radius = radius;
     }
     public override double GetArea()
     {
