@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+﻿using Tests.Exceptions;
 
 namespace ShapeLibrary
 {
@@ -8,13 +8,13 @@ namespace ShapeLibrary
     {
       if (FirstSide <= 0 || SecondSide <= 0 || ThirdSide <= 0)
       {
-        throw new ArgumentException("Длинны одной или нескольких сторон недопустимы");
+        throw new ArgumentSideLengthException("The length of one or more sides is unacceptable. The lengths of all sides must be greater than zero");
       }
       else if(FirstSide > (SecondSide + ThirdSide)
             || SecondSide > (FirstSide + ThirdSide)
             || ThirdSide > (FirstSide + SecondSide))
       {
-        throw new ArgumentException("Существование треугольника с такими сторонами невозможно");
+        throw new ArgumentSideLengthException("The existence of a triangle with such sides is impossible. The length of one side is greater than the sum of the other two");
       }
       else
       {

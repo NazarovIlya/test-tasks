@@ -2,8 +2,8 @@
 {
   public class CirclTests
   {
-    [TestClass]
-    [TestMethod]
+    //[TestClass]
+    //[TestMethod]
 
   }
 }

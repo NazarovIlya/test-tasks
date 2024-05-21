@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShapeLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d19b0b7e6e058a7515f1e1ae7d844d929badcd05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc3177089a2c029408b8ba83180459c41a75c26f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShapeLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShapeLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

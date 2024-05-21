@@ -7,8 +7,8 @@ TriangleTests shapeTests = new();
 
 double radius = 5,
        fisrtSide = 3,
-       secondSide = 3,
-       thirdSide = 3;
+       secondSide = 4,
+       thirdSide = 5;
 
 Circl circl = new(radius);
 Triangle triangle = new(fisrtSide, secondSide, thirdSide);

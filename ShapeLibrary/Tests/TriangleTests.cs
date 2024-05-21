@@ -1,4 +1,6 @@
-using ShapeLibrary; 
+using ShapeLibrary;
+
+using Tests.Exceptions;
 
 namespace Tests
 {
@@ -6,7 +8,7 @@ namespace Tests
   public class TriangleTests
   {
     [TestMethod]
-    public void IsRightCalculate()
+    public void TriangleCalculate()
     {
       Triangle triangle = new(3, 3, 3);
       Assert.AreEqual(3.8971, Math.Round(triangle.GetArea(), 4));
@@ -19,7 +21,7 @@ namespace Tests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ArgumentException))]
+    [ExpectedException(typeof(ArgumentSideLengthException))]
     public void IsArgumentExeption()
     {
       Triangle triangle = new(2, 2, 5);
@@ -30,6 +32,16 @@ namespace Tests
 
       triangle = new Triangle(10, 10, 21);
       triangle.GetArea();
+    }
+
+    [TestMethod]
+    public void IsRightAngle()
+    {
+      Triangle triangle = new(3, 4, 5);
+      Assert.AreEqual(true, triangle.IsRightAngled());
+
+      triangle = new(5, 5, 5);
+      Assert.AreEqual(false, triangle.IsRightAngled());
     }
   }
 }
