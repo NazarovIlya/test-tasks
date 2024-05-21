@@ -1,7 +1,5 @@
 ﻿using ShapeLibrary.Exceptions;
 
-using Tests;
-
 namespace ShapeLibrary
 {
   public class Circl() : Shape

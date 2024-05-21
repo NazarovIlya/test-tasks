@@ -1,5 +1,4 @@
 ﻿using ShapeLibrary.Exceptions;
-using Tests.Exceptions;
 
 namespace ShapeLibrary
 {

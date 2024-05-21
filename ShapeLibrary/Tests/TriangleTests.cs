@@ -1,12 +1,24 @@
 using ShapeLibrary;
-
-using Tests.Exceptions;
+using ShapeLibrary.Exceptions;
 
 namespace Tests
 {
   [TestClass]
   public class TriangleTests
   {
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentSideLengthException))]
+    public void IsTriangle()
+    {
+      Triangle triangle = new(2, 2, 5);
+      triangle.GetArea();
+
+      triangle = new Triangle(5, 5, 11);
+      triangle.GetArea();
+
+      triangle = new Triangle(10, 10, 21);
+      triangle.GetArea();
+    }
     [TestMethod]
     public void TriangleCalculate()
     {
@@ -18,20 +30,6 @@ namespace Tests
 
       triangle = new Triangle(5, 8, 10);
       Assert.AreEqual(19.81, triangle.GetArea(), 2);
-    }
-
-    [TestMethod]
-    [ExpectedException(typeof(ArgumentSideLengthException))]
-    public void IsArgumentExeption()
-    {
-      Triangle triangle = new(2, 2, 5);
-      triangle.GetArea();
-
-      triangle = new Triangle(5, 5, 11);
-      triangle.GetArea();
-
-      triangle = new Triangle(10, 10, 21);
-      triangle.GetArea();
     }
 
     [TestMethod]
