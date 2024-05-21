@@ -1,6 +1,6 @@
 ﻿namespace ShapeLibrary
 {
-  internal interface IArea
+  public interface IArea
   {
     public double GetArea();
   }
