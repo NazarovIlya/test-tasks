@@ -1,9 +1,4 @@
 ﻿using ShapeLibrary;
-using Tests;
-
-TriangleTests shapeTests = new();
-
-//shapeTests.IsTriangle();
 
 double radius = 5,
        fisrtSide = 3,

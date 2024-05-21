@@ -6,7 +6,7 @@
 
     public override string ToString()
     {
-      return string.Format("Suare of {0} equals {1:f2}", this.GetType().Name, this.GetArea());
+      return string.Format("Square of {0} equals {1:f2}", this.GetType().Name, this.GetArea());
     }
   }
 }
