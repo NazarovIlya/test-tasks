@@ -1,35 +1,47 @@
-﻿using Tests.Exceptions;
+﻿using ShapeLibrary.Exceptions;
+using Tests.Exceptions;
 
 namespace ShapeLibrary
 {
-  public class Triangle(double FirstSide, double SecondSide, double ThirdSide) : Shape, IRight
+  public class Triangle() : Shape, IRight
   {
-    public override double GetArea()
+    private double _firstSide;
+    private double _secondSide;
+    private double _thirdSide;
+
+    public Triangle(double firstSide, double secondSide, double thirdSide) : this()
     {
-      if (FirstSide <= 0 || SecondSide <= 0 || ThirdSide <= 0)
+      if (firstSide <= 0 || secondSide <= 0 || thirdSide <= 0)
       {
-        throw new ArgumentSideLengthException("The length of one or more sides is unacceptable. The lengths of all sides must be greater than zero");
+        throw new ArgumentNotPositiveValueException("The length of one or more sides is unacceptable. The lengths of all sides must be greater than zero");
       }
-      else if(FirstSide > (SecondSide + ThirdSide)
-            || SecondSide > (FirstSide + ThirdSide)
-            || ThirdSide > (FirstSide + SecondSide))
+      else if (firstSide > (secondSide + thirdSide)
+            || secondSide > (firstSide + thirdSide)
+            || thirdSide > (firstSide + secondSide))
       {
         throw new ArgumentSideLengthException("The existence of a triangle with such sides is impossible. The length of one side is greater than the sum of the other two");
       }
       else
       {
-        //Расчет площади треугольника по трем сторонам (формула Герона)
-        double semiPerimeter = (FirstSide + SecondSide + ThirdSide) / 2;
-
-        return Math.Sqrt(semiPerimeter * (semiPerimeter - FirstSide)
-                                       * (semiPerimeter - SecondSide)
-                                       * (semiPerimeter - ThirdSide));
+        _firstSide = firstSide;
+        _secondSide = secondSide;
+        _thirdSide = thirdSide;
       }
+    }
+
+    public override double GetArea()
+    {
+      //Расчет площади треугольника по трем сторонам (формула Герона)
+      double semiPerimeter = (_firstSide + _secondSide + _thirdSide) / 2;
+
+      return Math.Sqrt(semiPerimeter * (semiPerimeter - _firstSide)
+                                     * (semiPerimeter - _secondSide)
+                                     * (semiPerimeter - _thirdSide));
     }
 
     public bool IsRightAngled()
     {
-      double[] sides = { FirstSide, SecondSide, ThirdSide };
+      double[] sides = { _firstSide, _secondSide, _thirdSide };
 
       Array.Sort(sides);
 
