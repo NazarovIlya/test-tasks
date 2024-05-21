@@ -58,15 +58,15 @@ namespace ShapeLibrary
       }
     }
 
-    public void IsRightAngledString()
+    public string IsRightAngledString()
     {
-      if (this.IsRightAngled())
+      if (IsRightAngled())
       {
-        Console.WriteLine("Треугольник является прямоугольным");
+        return "The triangle is rectangular";
       }
       else
       {
-        Console.WriteLine("Треугольник не является прмоугольным");
+        return "The triangle is not rectangular";
       }
     }
   }

@@ -22,4 +22,4 @@ bool isRight = triangle.IsRightAngled();
 Console.WriteLine(circl.ToString());
 Console.WriteLine(triangle.ToString());
 
-triangle.IsRightAngledString();
+Console.WriteLine(triangle.IsRightAngledString());
